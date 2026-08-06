@@ -70,7 +70,7 @@
         ctx.fillStyle = "rgba(102, 204, 0, 0.7)";
         ctx.fillText(txt, 4, 17);
 
-        
+
         let b64 = canvas.toDataURL().replace("data:image/png;base64,", "");
 
         setTimeout(() => {
@@ -133,7 +133,7 @@
             setTimeout(()=>window.location.href = decodeURIComponent(window.location.hash.substring(1)), 200);
         } else {
             fetch(BASE_URL + '/application.json5?b64=' + b64).then(r=>r.json()).then(info=>{
-                if (info.target === 'B' && (window.Android || window.NativeApp))
+                if (info.target === 'B')
                     setTimeout(()=>window.location.href = info.url, 200);
                 else 
                     (() => {
