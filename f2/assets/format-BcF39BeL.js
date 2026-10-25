@@ -1,0 +1,1 @@
+function i(n,t=2){return n==null||isNaN(n)?"--":Number(n).toLocaleString("en-US",{minimumFractionDigits:t,maximumFractionDigits:t})}function u(n,t=2){return n==null||isNaN(n)?"--":(n>0?"+":"")+Number(n).toFixed(t)+"%"}function a(n){return n==null||n===0?"flat":n>0?"up":"down"}export{u as a,a as d,i as f};

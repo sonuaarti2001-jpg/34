@@ -1,0 +1,1 @@
+import{g as a,h as r,j as s,e as c}from"./index-DtKT3rU1.js";const _={__name:"AppNav",props:{title:{type:String,default:""}},setup(e){const t=a();function n(){window.history.length>1?t.back():t.push("/")}return(l,i)=>{const o=r("van-nav-bar");return s(),c(o,{title:e.title,"left-arrow":"",onClickLeft:n},null,8,["title"])}}};export{_};
